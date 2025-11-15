@@ -6,10 +6,10 @@ const StatsSection = () => {
     <section className="bg-white py-16 text-midnight">
       <div className="mx-auto max-w-5xl rounded-[40px] border border-mist bg-cloud px-6 py-12 text-center shadow-card">
         <p className="text-xs font-semibold uppercase tracking-[0.4em] text-accent2">
-          Happy Customers & Counting
+          Experience & Reliability
         </p>
         <h3 className="mt-4 text-3xl font-semibold text-midnight">
-          We appreciate your trust greatly.
+          The numbers behind VIVID’s hood & exterior cleaning
         </h3>
         <div className="mt-10 grid gap-8 sm:grid-cols-3">
           {stats.map((stat) => (

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { PiPhoneCallBold } from "react-icons/pi";
-import { badges, heroDetails } from "../data/content";
+import { PiPhoneCallBold, PiCheckCircleBold } from "react-icons/pi";
+import { badges, heroContent } from "../data/content";
 
 const Hero = () => {
   const handleCtaClick = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
           className="flex-1"
         >
           <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-accent2">
-            {heroDetails.subTitle}
+            {heroContent.eyebrow}
           </p>
           <motion.h1
             className="text-4xl font-semibold leading-tight text-midnight sm:text-5xl lg:text-6xl"
@@ -28,37 +28,49 @@ const Hero = () => {
             transition={{ delay: 0.1, duration: 0.7 }}
             viewport={{ once: true }}
           >
-            {heroDetails.title}
+            {heroContent.headline}
           </motion.h1>
-          <p className="mt-6 text-base text-coal/80 lg:text-lg">
-            {heroDetails.description}
-          </p>
+          <p className="mt-6 text-lg font-medium text-coal/80">{heroContent.subHeadline}</p>
+          <div className="mt-4 flex flex-col gap-4 text-base text-coal/80">
+            {heroContent.paragraphs.map((para) => (
+              <p key={para}>{para}</p>
+            ))}
+          </div>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <button
               onClick={handleCtaClick}
-              className="rounded-full bg-accent px-7 py-4 text-sm font-semibold text-midnight shadow-glow transition hover:-translate-y-0.5"
+              className="rounded-full bg-accent px-7 py-4 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5"
             >
-              {heroDetails.buttonLabel}
+              {heroContent.primaryCta}
             </button>
             <a
-              href="tel:+13944955993"
+              href={`tel:${heroContent.phone.replace(/[^\\d]/g, "")}`}
               className="flex items-center justify-center gap-3 rounded-full border border-mist bg-white px-6 py-4 text-sm font-semibold text-midnight transition hover:shadow-card"
             >
               <PiPhoneCallBold className="text-base text-accent2" />
-              {heroDetails.secondaryLabel}
+              Call {heroContent.phone}
             </a>
           </div>
+          <p className="text-sm font-semibold text-coal/80">{heroContent.secondaryLine}</p>
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
             {badges.map((badge) => (
               <div
                 key={badge.label}
                 className="rounded-3xl border border-mist bg-cloud p-4 text-left shadow-sm"
               >
-                <p className="text-2xl font-semibold text-accent2">{badge.label}</p>
+                <p className="text-base font-semibold text-accent2">{badge.label}</p>
                 <p className="text-sm text-coal/80">{badge.description}</p>
               </div>
             ))}
           </div>
+          <ul className="mt-6 space-y-3 text-sm text-coal/90">
+            {heroContent.trustBullets.map((item) => (
+              <li key={item} className="flex items-start gap-2">
+                <PiCheckCircleBold className="mt-0.5 text-accent2" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 40 }}

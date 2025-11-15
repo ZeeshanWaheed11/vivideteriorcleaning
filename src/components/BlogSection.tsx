@@ -8,7 +8,7 @@ const BlogSection = () => {
       <div className="mx-auto max-w-6xl px-4">
         <SectionHeader
           subtitle="RECENT POSTS"
-          title="Our latest news from blog"
+          title="Our latest tips for safer, cleaner kitchens"
           align="center"
           tone="light"
         />
@@ -32,10 +32,9 @@ const BlogSection = () => {
                 <div className="text-xs font-semibold uppercase tracking-[0.3em] text-accent2">
                   {post.category}
                 </div>
-                <p className="mt-2 text-sm text-slate">{post.date}</p>
-                <h3 className="mt-4 flex-1 text-xl font-semibold text-midnight">
-                  {post.title}
-                </h3>
+                {post.date && <p className="mt-2 text-sm text-slate">{post.date}</p>}
+                <h3 className="mt-4 text-xl font-semibold text-midnight">{post.title}</h3>
+                <p className="mt-3 flex-1 text-sm text-slate">{post.excerpt}</p>
                 <button className="mt-6 text-sm font-semibold text-accent2">
                   Read All Articles →
                 </button>

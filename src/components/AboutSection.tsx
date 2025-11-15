@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { workingHours } from "../data/content";
+import { aboutContent } from "../data/content";
 import MarqueeStrip from "./MarqueeStrip";
 
 const AboutSection = () => {
@@ -15,30 +15,18 @@ const AboutSection = () => {
             className="space-y-6"
           >
             <span className="text-xs font-semibold uppercase tracking-[0.4em] text-accent2">
-              WHO WE ARE
+              {aboutContent.eyebrow}
             </span>
             <h2 className="text-4xl font-semibold leading-tight text-midnight">
-              Your comfort is our main priority
+              {aboutContent.title}
             </h2>
-            <p className="text-base text-coal/80">
-              We appreciate your trust greatly. Our patients choose our clinic because they know we are the best in the field.
-            </p>
-            <div className="rounded-3xl border border-mist bg-cloud p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-coal/60">
-                Working Hours
-              </p>
-              <div className="mt-4 space-y-3 text-lg font-semibold">
-                {workingHours.map((slot) => (
-                  <div key={slot.label} className="flex items-center justify-between text-midnight">
-                    <span>{slot.label}</span>
-                    <span className="text-accent">{slot.value}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <button className="rounded-full border border-mist px-6 py-3 text-sm font-semibold text-midnight transition hover:bg-cloud">
-              Discover More
-            </button>
+            <p className="text-base text-coal/80">{aboutContent.description}</p>
+            <p className="text-base text-coal/80">{aboutContent.secondary}</p>
+            <ul className="space-y-2 text-sm text-coal/80">
+              {aboutContent.quickFacts.map((fact) => (
+                <li key={fact}>• {fact}</li>
+              ))}
+            </ul>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 40 }}
@@ -60,7 +48,7 @@ const AboutSection = () => {
         </div>
       </div>
       <div className="mt-16">
-        <MarqueeStrip text="ABOUT US" />
+        <MarqueeStrip text={aboutContent.marquee} />
       </div>
     </section>
   );

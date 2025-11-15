@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
-import { features } from "../data/content";
+import { features, featuresIntro } from "../data/content";
 
 const Features = () => {
   return (
     <section className="bg-white py-20 text-midnight">
       <div className="mx-auto max-w-6xl px-4">
         <SectionHeader
-          subtitle="WHAT WE DO"
-          title="Your comfort is our main priority"
-          description="Our professional dental clinic offers the whole range of dentistry services: treatment of caries, gum diseases, tooth whitening, implantation, dentures, surgery, etc."
+          subtitle={featuresIntro.eyebrow}
+          title={featuresIntro.title}
+          description={featuresIntro.description}
           tone="light"
         />
         <div className="mt-12 grid gap-6 md:grid-cols-3">

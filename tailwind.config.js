@@ -14,8 +14,8 @@ export default {
         mist: "#E3E3EE",
         aqua: "#C1DCE2",
         teal: "#A6C9D3",
-        accent: "#FED00E",
-        accent2: "#443DFC",
+        accent: "#9057EC",
+        accent2: "#6F33C8",
       },
       boxShadow: {
         card: "0 25px 50px -12px rgba(14,13,57,0.3)",

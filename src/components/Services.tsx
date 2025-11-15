@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
-import { services } from "../data/content";
+import { secondaryServicesLine, services, servicesIntro } from "../data/content";
 
 const Services = () => {
   return (
     <section id="services" className="bg-cloud py-20 text-midnight">
       <div className="mx-auto max-w-6xl px-4">
         <SectionHeader
-          subtitle="SERVICES"
-          title="We provide our best cleaning services for you"
-          description="Our company provides a wide range of cleaning services, from home cleaning to office cleaning. We use only advanced technologies to keep your room looking the best."
+          subtitle={servicesIntro.eyebrow}
+          title={servicesIntro.title}
+          description={servicesIntro.intro}
           tone="light"
         />
         <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -32,6 +32,9 @@ const Services = () => {
               </button>
             </motion.article>
           ))}
+        </div>
+        <div className="mt-10 rounded-3xl border border-mist bg-white px-6 py-6 text-center text-sm font-semibold text-coal/80">
+          {secondaryServicesLine}
         </div>
       </div>
     </section>

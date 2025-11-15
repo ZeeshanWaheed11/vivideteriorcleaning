@@ -30,113 +30,100 @@ export type Testimonial = {
 export type BlogPost = {
   image: string;
   category: string;
-  date: string;
+  date?: string;
   title: string;
+  excerpt: string;
+};
+
+export const brandInfo = {
+  name: "VIVID Exterior Cleaning",
+  tagline: "Certified Hood & Exterior Cleaning Experts – Austin, TX",
+  domain: "vividexteriorcleaning.co",
+};
+
+export const topBarCopy = {
+  message:
+    "Need urgent hood or exterior cleaning? Call or text (512) 897-6963 for a fast quote – available 7 days a week, 24/7 for emergencies.",
+  phone: "(512) 897-6963",
 };
 
 export const navLinks: NavLink[] = [
-  { label: "About Us", href: "#about" },
+  { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Gallery", href: "#gallery" },
   { label: "Blog", href: "#blog" },
   { label: "Contact", href: "#contact" },
 ];
 
+export const heroContent = {
+  eyebrow: "MFS-CERTIFIED • NFPA-96 COMPLIANT • FULLY INSURED",
+  headline: "NFPA-96 Hood Vent Cleaning for Austin’s Kitchens",
+  subHeadline:
+    "Deep, code-compliant hood and exhaust cleaning from cooktop to rooftop fan, so you pass fire inspections, protect your staff, and keep the line moving.",
+  paragraphs: [
+    "At VIVID Exterior Cleaning, we specialize in commercial kitchen exhaust and hood vent cleaning that meets NFPA-96 standards and local fire code. Our certified techs use professional-grade degreasers and equipment to clean your entire system down to bare metal – not just what you can see.",
+    "Whether you run a busy restaurant, bar, food truck, hotel, or commercial kitchen, we schedule around your hours – after-hours, overnight, weekends, and 24/7 emergency calls – so you stay compliant without losing a shift.",
+  ],
+  primaryCta: "Schedule a Hood Cleaning",
+  phone: "(512) 897-6963",
+  secondaryLine: "Or call (512) 897-6963 to talk directly with Jimmy or Ryan.",
+  trustBullets: [
+    "MFS-certified hood cleaning specialists",
+    "NFPA-96 compliant from hood to rooftop fan",
+    "Fully insured & locally owned in Austin, TX",
+    "Photo documentation for your records and fire inspector",
+  ],
+};
+
+export const badges = [
+  {
+    label: "Trusted by Local Kitchens",
+    description:
+      "From Austin to Round Rock, Hutto, Cedar Park, Buda and Bastrop, commercial kitchens rely on VIVID to keep their hoods clean, safe, and inspection-ready.",
+  },
+  {
+    label: "Exterior Cleaning Pros",
+    description:
+      "Beyond the kitchen, we handle house washing, roof cleaning, construction clean-ups, window cleaning, and holiday & permanent lighting for homes and businesses.",
+  },
+];
+
+export const servicesIntro = {
+  eyebrow: "HIGHEST LEVEL OF SERVICE",
+  title: "We provide our best cleaning services for your kitchen & property",
+  intro:
+    "VIVID started in exterior cleaning and grew into full commercial hood and exhaust cleaning after seeing how much risk grease-packed systems create for local kitchens. Today, we combine safety-first hood cleaning with premium exterior services, so your building looks sharp and your kitchen stays compliant.",
+};
+
 export const services: Service[] = [
   {
-    title: "House Cleaning",
+    title: "Commercial Hood & Exhaust Cleaning",
     description:
-      "Companies seem to dislike the term 'turnaround consulting' because it represents failure. The truth is that turnaround consulting represents success at realizing the company is going in the wrong direction.",
+      "We thoroughly clean your hood, plenum, filters, ductwork, and exhaust fan using hot water, degreasers, and specialized tools. Our goal is simple: remove grease build-up to bare metal so your system runs safer, cooler, and more efficiently.",
     icon: "/assets/icons/icon-1.svg",
   },
   {
-    title: "Window Cleaning",
+    title: "Full Hood-to-Rooftop Cleaning",
     description:
-      "USA champions professionalism in the cleaning industry by providing top-quality cleaning and related services that meet and exceed the expectations of today's demanding corporate clients.",
+      "Grease doesn’t stop at the hood. We clean from kitchen hood all the way through the rooftop fan, including the fan housing and accessible duct runs, so there are no ‘forgotten’ sections that fail inspection or become a fire hazard.",
     icon: "/assets/icons/icon-2.svg",
   },
   {
-    title: "Pest Control",
+    title: "NFPA-96 Compliance & Fire Inspection Prep",
     description:
-      "A neatly maintained building is an important asset to every organization. It reflects who you are and influences how your customers perceive you.",
+      "We follow NFPA-96 standards and local fire code best practices, then provide before-and-after photos and a clear service report you can show your fire marshal, insurance provider, or landlord. Need to get ready before an inspection? We’ve got you covered.",
     icon: "/assets/icons/icon-3.svg",
   },
   {
-    title: "Floor Cleaning",
+    title: "Preventive Programs & Emergency Cleanings",
     description:
-      "Condition of your home. We work in teams of 2-4 or more. A team leader or the owner. As a web crawler expert, we help organizations adjust to the expanding significance of online presence.",
+      "Set up a recurring cleaning schedule so you never have to chase due dates again. And when a surprise inspection or heavy season leaves your system in rough shape, call us for after-hours and 24/7 emergency hood cleaning.",
     icon: "/assets/icons/icon-4.svg",
   },
 ];
 
-export const features: Feature[] = [
-  {
-    title: "Service and guarantees",
-    description:
-      "We will provide you with the best possible care in an atmosphere of comfort and compassion.",
-    icon: "/assets/icons/icon-1.svg",
-  },
-  {
-    title: "Team of professionals",
-    description:
-      "We will eliminate the chance of multiple visits by delivering the premium quality service.",
-    icon: "/assets/icons/icon-2.svg",
-  },
-  {
-    title: "Highest level of service",
-    description:
-      "Our company provides a wide range of cleaning services, from home cleaning to office cleaning.",
-    icon: "/assets/icons/icon-3.svg",
-  },
-];
-
-export const stats: Stat[] = [
-  { value: "4035", label: "Happy Customers & Counting" },
-  { value: "4.8", suffix: "/5", label: "Average client rating" },
-  { value: "120", suffix: "+", label: "Projects finished monthly" },
-];
-
-export const testimonials: Testimonial[] = [
-  {
-    quote:
-      "Cleaner provides a wide range of cleaning services, from home cleaning to office cleaning. They used advanced technologies to keep our room looking the best. Their team of experts focuses on helping us achieve optimal clean surfaces.",
-    name: "Jack Morrison",
-    detail: "36 y, New York",
-  },
-  {
-    quote:
-      "Cleaner provides a wide range of cleaning services, from home cleaning to office cleaning. They used advanced technologies to keep our room looking the best.",
-    name: "Laura Gibson",
-    detail: "31 y, Chicago",
-  },
-  {
-    quote:
-      "Their team of experts who have been in the profession for years focuses on helping you achieve optimal clean surface every single visit.",
-    name: "Oliver Stone",
-    detail: "29 y, Miami",
-  },
-];
-
-export const blogPosts: BlogPost[] = [
-  {
-    image: "/assets/services.png",
-    category: "Apartment",
-    date: "Mar 15, 2022",
-    title: "How to clean wooden floors without creating dust.",
-  },
-  {
-    image: "/assets/features.png",
-    category: "Office",
-    date: "Feb 28, 2022",
-    title: "The secret of cleaning your wooden furnitures.",
-  },
-  {
-    image: "/assets/stats.png",
-    category: "Cleaning",
-    date: "Feb 6, 2022",
-    title: "6 easy ideas to clean office sofa without water.",
-  },
-];
+export const secondaryServicesLine =
+  "House washing • Roof cleaning • Construction clean-up • Window cleaning • Holiday & permanent lighting installs. One trusted team for your whole property.";
 
 export const galleryImages = [
   "/assets/hero.png",
@@ -145,53 +132,154 @@ export const galleryImages = [
   "/assets/about-people.png",
 ];
 
-export const heroDetails = {
-  title: "Professional Cleaning Services in Auburn.",
-  subTitle: "AWARD WINNING CLEANING SERVICE COMPANY",
+export const aboutContent = {
+  marquee: "ABOUT VIVID • HOOD & EXTERIOR CLEANING • AUSTIN & SURROUNDING AREAS •",
+  eyebrow: "WHO WE ARE",
+  title: "Your local hood & exterior cleaning team, built on experience and trust",
   description:
-    "Our company provides a wide range of cleaning services, from home cleaning to office cleaning. We use only advanced technologies to keep your room looking the best.",
-  buttonLabel: "Make An Appointment",
-  secondaryLabel: "Call us: +1-394-495-5993",
+    "VIVID Exterior Cleaning is owned and operated by Jimmy & Ryan, two exterior cleaning pros with over 20 years of combined experience in house washing, window cleaning, construction clean-up, lighting, and now specialized commercial hood vent cleaning. We met in the field, built our reputation on showing up, doing it right, and treating every property like our own – and we carry that same mindset into every kitchen we clean.",
+  secondary:
+    "We invested in professional hood cleaning training and MFS certification so Austin-area restaurants could have a local partner who understands NFPA-96, grease fire risk, and real-world kitchen operations – not just surface-level cleaning. Today, VIVID is known for being responsive, detail-driven, and easy to work with.",
+  quickFacts: [
+    "20+ years combined experience in exterior & hood cleaning",
+    "Certified and fully insured for commercial kitchen exhaust cleaning",
+    "Serving Austin, Round Rock, Hutto, Cedar Park, Buda, Bastrop and surrounding areas",
+    "After-hours and 24/7 emergency service available",
+  ],
 };
 
-export const workingHours = [
-  { label: "MON-FRI", value: "9 AM - 22 PM" },
-  { label: "SATURDAY", value: "9 AM - 20 PM" },
+export const featuresIntro = {
+  eyebrow: "WHAT WE DO",
+  title: "We don’t just clean – we protect your kitchen and your business",
+  description:
+    "A greasy hood isn’t just a cleanliness issue – it’s a fire, insurance, and downtime problem waiting to happen. Our process goes beyond a quick wipe-down, focusing on safety, documentation, and long-term reliability.",
+};
+
+export const features: Feature[] = [
+  {
+    title: "Deep Cleaning to Bare Metal",
+    description:
+      "We use commercial-grade degreasers, hot water, and specialized tools to break down grease build-up and clean your hood and ductwork back to bare metal wherever accessible, helping you meet NFPA-96 guidelines and lower fire risk.",
+    icon: "/assets/icons/icon-1.svg",
+  },
+  {
+    title: "Code-Ready Documentation",
+    description:
+      "After each service, we provide before-and-after photos and a written summary of what we cleaned, so you have clear proof of maintenance for fire marshals, landlords, and insurers.",
+    icon: "/assets/icons/icon-2.svg",
+  },
+  {
+    title: "Scheduled Around Your Hours",
+    description:
+      "We work when you don’t – overnight, early mornings, or off-days – to keep your kitchen open and your staff focused on service. Emergency situation? We offer 24/7 response when you need us most.",
+    icon: "/assets/icons/icon-3.svg",
+  },
+  {
+    title: "One Team for Hood & Exterior",
+    description:
+      "Combine hood cleaning with pressure washing, window cleaning, and lighting installs to keep both your kitchen and your curb appeal in top shape – with one trusted vendor and one call to make.",
+    icon: "/assets/icons/icon-4.svg",
+  },
 ];
 
-export const contactInfo = {
-  title: "Discuss our services or make an appointment",
+export const stats: Stat[] = [
+  { value: "20", suffix: "+", label: "Years of combined experience" },
+  { value: "7", label: "Days a week we’re available for scheduling" },
+  { value: "100", suffix: "%", label: "Focus on safety, compliance & long-term relationships" },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    quote:
+      "VIVID took our hood from greasy and overdue to spotless in one night. They handled everything from rooftop fan to filters and sent detailed photos for our records. The fire inspector was impressed, and we didn’t lose a single service.",
+    name: "Restaurant Owner",
+    detail: "Austin, TX",
+  },
+  {
+    quote:
+      "Scheduling was simple, they showed up on time, and worked after close so my staff wasn’t disrupted. The difference in our exhaust system and the peace of mind for fire safety is huge.",
+    name: "General Manager",
+    detail: "Round Rock, TX",
+  },
+  {
+    quote:
+      "We use VIVID for both hood cleaning and exterior work – windows, house wash, even lighting. It’s nice having one reliable crew who knows our property and always does what they say they’ll do.",
+    name: "Multi-Location Operator",
+    detail: "Greater Austin Area",
+  },
+];
+
+export const blogPosts: BlogPost[] = [
+  {
+    image: "/assets/services.png",
+    category: "Kitchen Safety",
+    title: "How Often Should You Clean Your Restaurant Hood Vent?",
+    excerpt:
+      "Learn how NFPA-96 guidelines, cooking volume, and menu type affect your cleaning schedule – and why ‘once a year’ is almost never enough for busy kitchens.",
+  },
+  {
+    image: "/assets/features.png",
+    category: "Compliance",
+    title: "Passing Your Next Hood & Exhaust Fire Inspection",
+    excerpt:
+      "From access panels to documentation, here’s what inspectors look for, and how professional hood cleaning keeps you ahead of surprise visits.",
+  },
+  {
+    image: "/assets/stats.png",
+    category: "Exterior Cleaning",
+    title: "Why Curb Appeal Matters for Restaurants as Much as the Kitchen",
+    excerpt:
+      "Clean windows, bright lighting, and a fresh exterior set the tone before guests taste a single bite. Pair hood cleaning with exterior services to boost your brand.",
+  },
+];
+
+export const contactContent = {
+  eyebrow: "CONTACT US",
+  title: "Let’s schedule your next hood or exterior cleaning",
   body:
-    "We know what a sore tooth is, so do not hesitate to reach us via the phone or to make an appointment online! We know what a sore.",
-  phone: "+1 071 281 9795",
-  email: "hello@vividexteriorcleaning.co",
+    "Share a few details about your kitchen or property, and we’ll send back a clear quote and recommended cleaning schedule. Whether you’re overdue, preparing for an inspection, or setting up a maintenance plan, we’ll make it straightforward and stress-free.",
+  bullets: [
+    "NFPA-96 compliant hood & exhaust cleaning",
+    "Photo and report after every service",
+    "After-hours & 24/7 emergency availability",
+    "Serving Austin, Round Rock, Hutto, Cedar Park, Buda, Bastrop & nearby areas",
+  ],
+  phones: [
+    { label: "Call / Text Jimmy", value: "(512) 897-6963" },
+    { label: "Call / Text Ryan", value: "(512) 644-7613" },
+  ],
+  email: "vividcleaning512@gmail.com",
+  serviceHours: "Standard appointments: Mon–Sat · After-hours & emergency hood cleaning: 24/7 by request",
 };
 
-export const footerLinks = {
-  company: [
+export const footerContent = {
+  tagline:
+    "Expert hood vent, exhaust, and exterior cleaning for Austin-area homes and businesses.",
+  quickLinks: [
     { label: "Home", href: "#hero" },
-    { label: "Articles", href: "#blog" },
-    { label: "Contacts", href: "#contact" },
+    { label: "About", href: "#about" },
+    { label: "Services", href: "#services" },
+    { label: "Blog", href: "#blog" },
+    { label: "Contact", href: "#contact" },
   ],
-  services: [
-    { label: "Home Cleaning", href: "#services" },
-    { label: "Window Cleaning", href: "#services" },
-    { label: "Pest Control", href: "#services" },
-    { label: "Floor Cleaning", href: "#services" },
+  servicesList: [
+    "Commercial hood & exhaust cleaning",
+    "NFPA-96 compliant system cleaning",
+    "House & roof washing",
+    "Window cleaning",
+    "Construction clean-up",
+    "Holiday & permanent lighting installs",
   ],
-  legal: [
+  serviceArea:
+    "Proudly serving Austin, Round Rock, Hutto, Cedar Park, Buda, Bastrop and the surrounding Central Texas area.",
+  legalLinks: [
     { label: "Privacy Policy", href: "/privacy.html" },
     { label: "Terms of Service", href: "/terms.html" },
   ],
-  social: [
+  socials: [
     { label: "Facebook", href: "https://www.facebook.com" },
     { label: "Instagram", href: "https://www.instagram.com" },
     { label: "Linkedin", href: "https://www.linkedin.com" },
     { label: "Twitter", href: "https://www.twitter.com" },
   ],
 };
-
-export const badges = [
-  { label: "4.7 out of 5", description: "HIGHEST LEVEL OF SERVICE" },
-  { label: "4.8 out of 5", description: "Your comfort is our main priority" },
-];

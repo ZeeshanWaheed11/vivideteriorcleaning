@@ -20,8 +20,12 @@ const Testimonials = () => {
             TESTIMONIALS
           </p>
           <h2 className="mt-4 text-3xl font-semibold">
-            Happy Customers & Counting
+            What local owners say about VIVID
           </h2>
+          <p className="mt-4 text-sm text-coal/80">
+            Here’s how Austin-area owners describe working with us. Swap these with your real Google
+            and Nextdoor testimonials as you collect them.
+          </p>
           <div className="mt-8 rounded-3xl border border-mist bg-white p-8 shadow-card">
             <AnimatePresence mode="wait">
               <motion.div

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { PiListBold, PiXBold } from "react-icons/pi";
-import { navLinks } from "../data/content";
+import { brandInfo, navLinks } from "../data/content";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,9 +29,12 @@ const Navbar = () => {
         scrolled ? "bg-white/95 shadow-md backdrop-blur" : "bg-white/80"
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-        <a href="#hero" className="flex items-center gap-2 text-lg font-semibold text-midnight">
-          Vivid Exterior Cleaning
+      <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-4 lg:flex-row lg:items-center lg:justify-between">
+        <a href="#hero" className="flex flex-col text-midnight">
+          <span className="text-lg font-semibold">{brandInfo.name}</span>
+          <span className="text-xs font-medium uppercase tracking-[0.2em] text-coal/70">
+            {brandInfo.tagline}
+          </span>
         </a>
         <nav className="hidden items-center gap-8 text-sm font-semibold text-coal/80 lg:flex">
           {navLinks.map((link) => (
@@ -47,9 +50,9 @@ const Navbar = () => {
         <div className="hidden lg:flex">
           <button
             onClick={() => handleAnchorClick("#contact")}
-            className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-midnight shadow-glow transition hover:-translate-y-0.5"
+            className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5"
           >
-            Make An Appointment
+            Get a Free Quote
           </button>
         </div>
         <button
@@ -84,9 +87,9 @@ const Navbar = () => {
               ))}
               <button
                 onClick={() => handleAnchorClick("#contact")}
-                className="w-full rounded-full bg-accent px-6 py-3 text-sm font-semibold text-midnight"
+                className="w-full rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white"
               >
-                Make An Appointment
+                Get a Free Quote
               </button>
             </div>
           </motion.div>
