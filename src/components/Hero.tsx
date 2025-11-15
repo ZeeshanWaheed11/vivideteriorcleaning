@@ -31,15 +31,10 @@ const Hero = () => {
             {heroContent.headline}
           </motion.h1>
           <p className="mt-6 text-lg font-medium text-coal/80">{heroContent.subHeadline}</p>
-          <div className="mt-4 flex flex-col gap-4 text-base text-coal/80">
-            {heroContent.paragraphs.map((para) => (
-              <p key={para}>{para}</p>
-            ))}
-          </div>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <button
               onClick={handleCtaClick}
-              className="rounded-full bg-accent px-7 py-4 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5"
+              className="rounded-full bg-accent px-7 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5"
             >
               {heroContent.primaryCta}
             </button>

@@ -27,9 +27,6 @@ const Services = () => {
               </div>
               <h3 className="text-xl font-semibold text-midnight">{service.title}</h3>
               <p className="mt-3 text-sm text-slate">{service.description}</p>
-              <button className="mt-6 text-sm font-semibold text-accent2 transition group-hover:translate-x-1">
-                Discover More →
-              </button>
             </motion.article>
           ))}
         </div>

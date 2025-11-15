@@ -1,5 +1,4 @@
 import AboutSection from "./components/AboutSection";
-import BlogSection from "./components/BlogSection";
 import ContactSection from "./components/ContactSection";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
@@ -24,7 +23,6 @@ const App = () => {
         <Features />
         <StatsSection />
         <Testimonials />
-        <BlogSection />
         <ContactSection />
       </main>
       <Footer />

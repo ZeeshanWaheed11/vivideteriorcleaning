@@ -50,7 +50,7 @@ const Navbar = () => {
         <div className="hidden lg:flex">
           <button
             onClick={() => handleAnchorClick("#contact")}
-            className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5"
+            className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
           >
             Get a Free Quote
           </button>

@@ -60,10 +60,6 @@ export const heroContent = {
   headline: "NFPA-96 Hood Vent Cleaning for Austin’s Kitchens",
   subHeadline:
     "Deep, code-compliant hood and exhaust cleaning from cooktop to rooftop fan, so you pass fire inspections, protect your staff, and keep the line moving.",
-  paragraphs: [
-    "At VIVID Exterior Cleaning, we specialize in commercial kitchen exhaust and hood vent cleaning that meets NFPA-96 standards and local fire code. Our certified techs use professional-grade degreasers and equipment to clean your entire system down to bare metal – not just what you can see.",
-    "Whether you run a busy restaurant, bar, food truck, hotel, or commercial kitchen, we schedule around your hours – after-hours, overnight, weekends, and 24/7 emergency calls – so you stay compliant without losing a shift.",
-  ],
   primaryCta: "Schedule a Hood Cleaning",
   phone: "(512) 897-6963",
   secondaryLine: "Or call (512) 897-6963 to talk directly with Jimmy or Ryan.",
@@ -133,7 +129,7 @@ export const galleryImages = [
 ];
 
 export const aboutContent = {
-  marquee: "ABOUT VIVID • HOOD & EXTERIOR CLEANING • AUSTIN & SURROUNDING AREAS •",
+  marquee: "VIVID EXTERIOR CLEANING • HOOD & EXTERIOR EXPERTS • CENTRAL TEXAS •",
   eyebrow: "WHO WE ARE",
   title: "Your local hood & exterior cleaning team, built on experience and trust",
   description:
