@@ -37,7 +37,7 @@ const Hero = () => {
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <button
               onClick={handleCtaClick}
-              className="rounded-full bg-accent px-7 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5"
+              className="rounded-full bg-[#FED00D] px-7 py-4 text-sm font-semibold text-midnight transition hover:-translate-y-0.5"
             >
               {heroContent.primaryCta}
             </button>
