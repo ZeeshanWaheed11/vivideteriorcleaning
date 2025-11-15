@@ -46,7 +46,6 @@ const Hero = () => {
               Call {heroContent.phone}
             </a>
           </div>
-          <p className="text-sm font-semibold text-coal/80">{heroContent.secondaryLine}</p>
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
             {badges.map((badge) => (
               <div
