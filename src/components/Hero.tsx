@@ -78,16 +78,19 @@ const Hero = () => {
             <div className="relative rounded-[40px] border border-mist bg-cloud p-6 shadow-card">
               <div className="rounded-[30px] bg-white p-4">
                 <img
-                  src="/assets/hero.png"
-                  alt="Cleaner professional"
-                  className="mx-auto h-[420px] w-auto object-contain"
+                  src="/assets/hero/main.webp"
+                  alt="VIVID Exterior Cleaning team"
+                  className="mx-auto h-[420px] w-full rounded-3xl object-cover"
+                  loading="lazy"
                 />
               </div>
-              <div className="pointer-events-none absolute -right-6 top-10 hidden w-24 lg:block">
-                <img src="/assets/hero-badge.png" alt="Badge" />
-              </div>
-              <div className="absolute -bottom-10 left-1/2 w-48 -translate-x-1/2">
-                <img src="/assets/hero-card.png" alt="Service card" />
+              <div className="absolute -bottom-8 left-1/2 w-48 -translate-x-1/2 rounded-2xl bg-white p-3 shadow-card">
+                <img
+                  src="/assets/hero/secondary.webp"
+                  alt="Before and after hood cleaning"
+                  className="w-full rounded-xl object-cover"
+                  loading="lazy"
+                />
               </div>
             </div>
             <div className="absolute -left-16 top-12 hidden h-64 w-64 rounded-full bg-accent/20 blur-3xl lg:block" />

@@ -122,10 +122,13 @@ export const secondaryServicesLine =
   "House washing • Roof cleaning • Construction clean-up • Window cleaning • Holiday & permanent lighting installs. One trusted team for your whole property.";
 
 export const galleryImages = [
-  "/assets/hero.png",
-  "/assets/services.png",
-  "/assets/features.png",
-  "/assets/about-people.png",
+  "/assets/gallery/gallery-1.webp",
+  "/assets/gallery/gallery-2.webp",
+  "/assets/gallery/gallery-3.webp",
+  "/assets/gallery/gallery-4.webp",
+  "/assets/gallery/gallery-5.webp",
+  "/assets/gallery/gallery-6.webp",
+  "/assets/gallery/gallery-7.webp",
 ];
 
 export const aboutContent = {
