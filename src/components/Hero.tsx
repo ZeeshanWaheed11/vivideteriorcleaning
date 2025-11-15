@@ -8,7 +8,8 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative overflow-hidden bg-midnight pb-20 pt-16">
+    <section id="hero" className="relative overflow-hidden bg-white pb-24 pt-20">
+      <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/2 bg-gradient-to-b from-accent/15 via-transparent to-transparent lg:block" />
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 lg:flex-row lg:items-center">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -17,11 +18,11 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="flex-1"
         >
-          <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
+          <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-accent2">
             {heroDetails.subTitle}
           </p>
           <motion.h1
-            className="text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl"
+            className="text-4xl font-semibold leading-tight text-midnight sm:text-5xl lg:text-6xl"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.7 }}
@@ -29,7 +30,7 @@ const Hero = () => {
           >
             {heroDetails.title}
           </motion.h1>
-          <p className="mt-6 text-base text-white/75 lg:text-lg">
+          <p className="mt-6 text-base text-coal/80 lg:text-lg">
             {heroDetails.description}
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -41,9 +42,9 @@ const Hero = () => {
             </button>
             <a
               href="tel:+13944955993"
-              className="flex items-center justify-center gap-3 rounded-full border border-white/20 px-6 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
+              className="flex items-center justify-center gap-3 rounded-full border border-mist bg-white px-6 py-4 text-sm font-semibold text-midnight transition hover:shadow-card"
             >
-              <PiPhoneCallBold className="text-base text-accent" />
+              <PiPhoneCallBold className="text-base text-accent2" />
               {heroDetails.secondaryLabel}
             </a>
           </div>
@@ -51,10 +52,10 @@ const Hero = () => {
             {badges.map((badge) => (
               <div
                 key={badge.label}
-                className="rounded-3xl border border-white/10 bg-white/5 p-4 text-left"
+                className="rounded-3xl border border-mist bg-cloud p-4 text-left shadow-sm"
               >
-                <p className="text-2xl font-semibold text-accent">{badge.label}</p>
-                <p className="text-sm text-white/70">{badge.description}</p>
+                <p className="text-2xl font-semibold text-accent2">{badge.label}</p>
+                <p className="text-sm text-coal/80">{badge.description}</p>
               </div>
             ))}
           </div>
@@ -67,8 +68,8 @@ const Hero = () => {
           className="flex-1"
         >
           <div className="relative">
-            <div className="relative rounded-[40px] border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-6 shadow-card">
-              <div className="rounded-[30px] bg-gradient-to-b from-white/10 to-transparent p-4">
+            <div className="relative rounded-[40px] border border-mist bg-cloud p-6 shadow-card">
+              <div className="rounded-[30px] bg-white p-4">
                 <img
                   src="/assets/hero.png"
                   alt="Cleaner professional"
@@ -82,7 +83,7 @@ const Hero = () => {
                 <img src="/assets/hero-card.png" alt="Service card" />
               </div>
             </div>
-            <div className="absolute -left-32 top-12 hidden h-64 w-64 rounded-full bg-accent/20 blur-3xl lg:block" />
+            <div className="absolute -left-16 top-12 hidden h-64 w-64 rounded-full bg-accent/20 blur-3xl lg:block" />
           </div>
         </motion.div>
       </div>

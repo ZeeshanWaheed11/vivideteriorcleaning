@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <header
       className={`sticky top-0 z-40 transition-all duration-500 ${
-        scrolled ? "bg-midnight/95 backdrop-blur" : "bg-transparent"
+        scrolled ? "bg-white/95 shadow-md backdrop-blur" : "bg-white/80"
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
@@ -38,11 +38,11 @@ const Navbar = () => {
             loading="lazy"
           />
         </a>
-        <nav className="hidden items-center gap-8 text-sm font-semibold text-white/80 lg:flex">
+        <nav className="hidden items-center gap-8 text-sm font-semibold text-coal/80 lg:flex">
           {navLinks.map((link) => (
             <button
               key={link.label}
-              className="transition hover:text-white"
+              className="transition hover:text-accent2"
               onClick={() => handleAnchorClick(link.href)}
             >
               {link.label}
@@ -77,7 +77,7 @@ const Navbar = () => {
             exit={{ opacity: 0 }}
             className="lg:hidden"
           >
-            <div className="space-y-4 bg-midnight px-4 pb-8 pt-2 text-lg font-semibold text-white/90">
+            <div className="space-y-4 bg-white px-4 pb-8 pt-2 text-lg font-semibold text-midnight">
               {navLinks.map((link) => (
                 <button
                   key={link.label}

@@ -13,7 +13,7 @@ import TopBar from "./components/TopBar";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-midnight text-white">
+    <div className="min-h-screen bg-cloud text-midnight">
       <TopBar />
       <Navbar />
       <main>
