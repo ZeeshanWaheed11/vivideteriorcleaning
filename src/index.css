@@ -21,6 +21,7 @@ body {
   font-family: 'Rubik', sans-serif;
   background-color: #FAFAFB;
   color: #0E0D39;
+  overflow-x: hidden;
 }
 
 #root {

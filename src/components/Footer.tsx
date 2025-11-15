@@ -18,9 +18,9 @@ const Footer = () => {
     <footer className="bg-white pb-10 pt-16 text-midnight">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-4">
         <div className="space-y-4">
-          <img src="/assets/logo.svg" alt="Cleaner logo" className="h-8" />
+          <p className="text-xl font-semibold text-midnight">Vivid Exterior Cleaning</p>
           <p className="text-sm text-coal/70">
-            Cleaner provides a wide range of cleaning services, from home cleaning to office cleaning.
+            Vivid Exterior Cleaning restores Auburn homes and businesses with top-tier exterior care.
           </p>
         </div>
         <div>
@@ -53,6 +53,20 @@ const Footer = () => {
         </div>
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-accent2">
+            Legal
+          </p>
+          <ul className="mt-4 space-y-3 text-sm text-coal/70">
+            {footerLinks.legal.map((link) => (
+              <li key={link.label}>
+                <a href={link.href} className="transition hover:text-accent2">
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-accent2">
             Social
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
@@ -74,7 +88,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="mx-auto mt-12 max-w-6xl border-t border-mist px-4 pt-6 text-center text-sm text-coal/60">
-        FramerBite © 2023. All Rights Reserved — Create a free website with Framer, the website builder loved by startups, designers and agencies.
+        © {new Date().getFullYear()} Vivid Exterior Cleaning · vividexteriorcleaning.co · All Rights Reserved.
       </div>
     </footer>
   );

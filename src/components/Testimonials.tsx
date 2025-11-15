@@ -64,7 +64,7 @@ const Testimonials = () => {
               alt="Happy Cleaner client"
               className="w-full rounded-[30px] object-cover"
             />
-            <div className="absolute -bottom-4 left-1/2 w-48 -translate-x-1/2 rounded-full bg-midnight px-6 py-3 text-center text-white shadow-card">
+            <div className="absolute -bottom-4 left-1/2 w-48 -translate-x-1/2 rounded-full bg-accent2 px-6 py-3 text-center text-white shadow-card">
               <p className="text-sm font-semibold">Happy Customers</p>
               <p className="text-2xl font-bold text-accent">4035+</p>
             </div>

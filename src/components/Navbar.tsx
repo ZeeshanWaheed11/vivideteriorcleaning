@@ -30,13 +30,8 @@ const Navbar = () => {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-        <a href="#hero" className="flex items-center gap-2">
-          <img
-            src="/assets/logo.svg"
-            alt="Cleaner logo"
-            className="h-8 w-auto"
-            loading="lazy"
-          />
+        <a href="#hero" className="flex items-center gap-2 text-lg font-semibold text-midnight">
+          Vivid Exterior Cleaning
         </a>
         <nav className="hidden items-center gap-8 text-sm font-semibold text-coal/80 lg:flex">
           {navLinks.map((link) => (
@@ -63,9 +58,9 @@ const Navbar = () => {
           aria-label="Toggle navigation menu"
         >
           {menuOpen ? (
-            <PiXBold className="text-2xl text-white" />
+            <PiXBold className="text-2xl text-midnight" />
           ) : (
-            <PiListBold className="text-2xl text-white" />
+            <PiListBold className="text-2xl text-midnight" />
           )}
         </button>
       </div>

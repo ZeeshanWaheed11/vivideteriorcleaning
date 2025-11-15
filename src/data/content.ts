@@ -1,14 +1,3 @@
-import type { IconType } from "react-icons";
-import {
-  PiBroomBold,
-  PiShieldCheckBold,
-  PiSprayBottleBold,
-  PiStackBold,
-  PiUsersThreeBold,
-  PiCertificateBold,
-} from "react-icons/pi";
-import { LuSparkles } from "react-icons/lu";
-
 export type NavLink = {
   label: string;
   href: string;
@@ -17,13 +6,13 @@ export type NavLink = {
 export type Service = {
   title: string;
   description: string;
-  icon: IconType;
+  icon: string;
 };
 
 export type Feature = {
   title: string;
   description: string;
-  icon: IconType;
+  icon: string;
 };
 
 export type Stat = {
@@ -58,25 +47,25 @@ export const services: Service[] = [
     title: "House Cleaning",
     description:
       "Companies seem to dislike the term 'turnaround consulting' because it represents failure. The truth is that turnaround consulting represents success at realizing the company is going in the wrong direction.",
-    icon: PiSprayBottleBold,
+    icon: "/assets/icons/icon-1.svg",
   },
   {
     title: "Window Cleaning",
     description:
       "USA champions professionalism in the cleaning industry by providing top-quality cleaning and related services that meet and exceed the expectations of today's demanding corporate clients.",
-    icon: PiShieldCheckBold,
+    icon: "/assets/icons/icon-2.svg",
   },
   {
     title: "Pest Control",
     description:
       "A neatly maintained building is an important asset to every organization. It reflects who you are and influences how your customers perceive you.",
-    icon: PiStackBold,
+    icon: "/assets/icons/icon-3.svg",
   },
   {
     title: "Floor Cleaning",
     description:
       "Condition of your home. We work in teams of 2-4 or more. A team leader or the owner. As a web crawler expert, we help organizations adjust to the expanding significance of online presence.",
-    icon: PiBroomBold,
+    icon: "/assets/icons/icon-4.svg",
   },
 ];
 
@@ -85,19 +74,19 @@ export const features: Feature[] = [
     title: "Service and guarantees",
     description:
       "We will provide you with the best possible care in an atmosphere of comfort and compassion.",
-    icon: PiCertificateBold,
+    icon: "/assets/icons/icon-1.svg",
   },
   {
     title: "Team of professionals",
     description:
       "We will eliminate the chance of multiple visits by delivering the premium quality service.",
-    icon: PiUsersThreeBold,
+    icon: "/assets/icons/icon-2.svg",
   },
   {
     title: "Highest level of service",
     description:
       "Our company provides a wide range of cleaning services, from home cleaning to office cleaning.",
-    icon: LuSparkles,
+    icon: "/assets/icons/icon-3.svg",
   },
 ];
 
@@ -175,7 +164,7 @@ export const contactInfo = {
   body:
     "We know what a sore tooth is, so do not hesitate to reach us via the phone or to make an appointment online! We know what a sore.",
   phone: "+1 071 281 9795",
-  email: "hello@cleaner.com",
+  email: "hello@vividexteriorcleaning.co",
 };
 
 export const footerLinks = {
@@ -189,6 +178,10 @@ export const footerLinks = {
     { label: "Window Cleaning", href: "#services" },
     { label: "Pest Control", href: "#services" },
     { label: "Floor Cleaning", href: "#services" },
+  ],
+  legal: [
+    { label: "Privacy Policy", href: "/privacy.html" },
+    { label: "Terms of Service", href: "/terms.html" },
   ],
   social: [
     { label: "Facebook", href: "https://www.facebook.com" },
