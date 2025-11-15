@@ -29,7 +29,7 @@ const Navbar = () => {
         scrolled ? "shadow-md" : ""
       }`}
     >
-      <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-4 text-white lg:flex-row lg:items-center lg:justify-between">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 text-white">
         <a href="#hero" className="flex items-center gap-3">
           <img
             src="/assets/logo-vivid.png"
@@ -37,7 +37,7 @@ const Navbar = () => {
             className="h-12 w-auto"
           />
         </a>
-        <nav className="hidden items-center gap-8 text-sm font-semibold text-white/90 lg:flex">
+        <nav className="hidden items-center gap-8 text-sm font-semibold text-white/90 md:flex">
           {navLinks.map((link) => (
             <button
               key={link.label}
