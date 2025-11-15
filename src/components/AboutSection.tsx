@@ -40,7 +40,7 @@ const AboutSection = () => {
                 alt="Cleaner specialist"
                 className="w-full rounded-[30px] object-cover"
               />
-              <div className="absolute -left-6 -top-6 rounded-2xl bg-accent px-4 py-3 text-sm font-semibold text-midnight shadow-card">
+              <div className="absolute -left-6 -top-6 rounded-2xl bg-midnight px-4 py-3 text-sm font-semibold text-white shadow-card">
                 HIGHEST LEVEL OF SERVICE
               </div>
             </div>

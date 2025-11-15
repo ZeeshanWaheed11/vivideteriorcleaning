@@ -70,7 +70,7 @@ const Testimonials = () => {
             />
             <div className="absolute -bottom-4 left-1/2 w-48 -translate-x-1/2 rounded-full bg-accent2 px-6 py-3 text-center text-white shadow-card">
               <p className="text-sm font-semibold">Happy Customers</p>
-              <p className="text-2xl font-bold text-accent">4035+</p>
+              <p className="text-2xl font-bold text-white">4035+</p>
             </div>
           </div>
         </div>

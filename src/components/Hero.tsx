@@ -30,7 +30,7 @@ const Hero = () => {
           >
             {heroContent.headline}
           </motion.h1>
-          <p className="mt-6 text-lg font-medium text-coal/80">{heroContent.subHeadline}</p>
+          <p className="mt-6 text-lg text-coal/80">{heroContent.subHeadline}</p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <button
               onClick={handleCtaClick}
