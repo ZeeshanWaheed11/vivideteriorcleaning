@@ -21,7 +21,7 @@ const Footer = () => {
           <img
             src="/assets/logo-vivid.png"
             alt={brandInfo.name}
-            className="h-12 w-auto rounded-lg bg-accent/10 p-2"
+            className="h-12 w-auto"
           />
           <p className="text-sm text-coal/70">{footerContent.tagline}</p>
         </div>

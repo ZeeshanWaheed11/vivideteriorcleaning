@@ -34,9 +34,8 @@ const Navbar = () => {
           <img
             src="/assets/logo-vivid.png"
             alt={brandInfo.name}
-            className="h-12 w-auto rounded-lg bg-white/10 p-2"
+            className="h-12 w-auto"
           />
-          <span className="text-lg font-semibold">{brandInfo.name}</span>
         </a>
         <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/80">
           {brandInfo.tagline}
@@ -55,7 +54,7 @@ const Navbar = () => {
         <div className="hidden lg:flex">
           <button
             onClick={() => handleAnchorClick("#contact")}
-            className="rounded-full border border-white/60 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
+            className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-accent transition hover:-translate-y-0.5"
           >
             Get a Free Quote
           </button>
