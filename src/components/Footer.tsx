@@ -18,7 +18,11 @@ const Footer = () => {
     <footer className="bg-white pb-10 pt-16 text-midnight">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-4">
         <div className="space-y-4">
-          <p className="text-xl font-semibold text-midnight">{brandInfo.name}</p>
+          <img
+            src="/assets/logo-vivid.png"
+            alt={brandInfo.name}
+            className="h-12 w-auto rounded-lg bg-accent/10 p-2"
+          />
           <p className="text-sm text-coal/70">{footerContent.tagline}</p>
         </div>
         <div>

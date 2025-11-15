@@ -25,22 +25,27 @@ const Navbar = () => {
 
   return (
     <header
-      className={`sticky top-0 z-40 transition-all duration-500 ${
-        scrolled ? "bg-white/95 shadow-md backdrop-blur" : "bg-white/80"
+      className={`sticky top-0 z-40 bg-accent transition-all duration-500 ${
+        scrolled ? "shadow-md" : ""
       }`}
     >
-      <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-4 lg:flex-row lg:items-center lg:justify-between">
-        <a href="#hero" className="flex flex-col text-midnight">
+      <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-4 text-white lg:flex-row lg:items-center lg:justify-between">
+        <a href="#hero" className="flex items-center gap-3">
+          <img
+            src="/assets/logo-vivid.png"
+            alt={brandInfo.name}
+            className="h-12 w-auto rounded-lg bg-white/10 p-2"
+          />
           <span className="text-lg font-semibold">{brandInfo.name}</span>
-          <span className="text-xs font-medium uppercase tracking-[0.2em] text-coal/70">
-            {brandInfo.tagline}
-          </span>
         </a>
-        <nav className="hidden items-center gap-8 text-sm font-semibold text-coal/80 lg:flex">
+        <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/80">
+          {brandInfo.tagline}
+        </p>
+        <nav className="hidden items-center gap-8 text-sm font-semibold text-white/90 lg:flex">
           {navLinks.map((link) => (
             <button
               key={link.label}
-              className="transition hover:text-accent2"
+              className="transition hover:text-white"
               onClick={() => handleAnchorClick(link.href)}
             >
               {link.label}
@@ -50,7 +55,7 @@ const Navbar = () => {
         <div className="hidden lg:flex">
           <button
             onClick={() => handleAnchorClick("#contact")}
-            className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
+            className="rounded-full border border-white/60 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
           >
             Get a Free Quote
           </button>
@@ -61,9 +66,9 @@ const Navbar = () => {
           aria-label="Toggle navigation menu"
         >
           {menuOpen ? (
-            <PiXBold className="text-2xl text-midnight" />
+            <PiXBold className="text-2xl text-white" />
           ) : (
-            <PiListBold className="text-2xl text-midnight" />
+            <PiListBold className="text-2xl text-white" />
           )}
         </button>
       </div>
