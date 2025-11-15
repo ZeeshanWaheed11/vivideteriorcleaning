@@ -37,9 +37,6 @@ const Navbar = () => {
             className="h-12 w-auto"
           />
         </a>
-        <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/80">
-          {brandInfo.tagline}
-        </p>
         <nav className="hidden items-center gap-8 text-sm font-semibold text-white/90 lg:flex">
           {navLinks.map((link) => (
             <button

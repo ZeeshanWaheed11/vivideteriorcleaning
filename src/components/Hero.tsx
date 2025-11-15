@@ -8,9 +8,12 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative overflow-hidden bg-white pb-24 pt-20">
-      <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/2 bg-gradient-to-b from-accent/15 via-transparent to-transparent lg:block" />
-      <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 lg:flex-row lg:items-center">
+    <section
+      id="hero"
+      className="relative overflow-hidden bg-gradient-to-b from-white via-white to-[#f2ebff] pb-24 pt-20"
+    >
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-accent/10 via-transparent to-transparent" />
+      <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-12 px-4 lg:flex-row lg:items-center">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
