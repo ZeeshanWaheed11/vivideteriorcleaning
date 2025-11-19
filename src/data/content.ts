@@ -43,8 +43,8 @@ export const brandInfo = {
 
 export const topBarCopy = {
   message:
-    "Need urgent hood or exterior cleaning? Call or text (512) 897-6963 for a fast quote – available 7 days a week, 24/7 for emergencies.",
-  phone: "(512) 897-6963",
+    "Need urgent hood or exterior cleaning? Call or text (737) 727-4423 for a fast quote – available 7 days a week, 24/7 for emergencies.",
+  phone: "(737) 727-4423",
 };
 
 export const navLinks: NavLink[] = [
@@ -61,8 +61,8 @@ export const heroContent = {
   subHeadline:
     "Deep, code-compliant hood and exhaust cleaning from cooktop to rooftop fan, so you pass fire inspections, protect your staff, and keep the line moving.",
   primaryCta: "Schedule a Hood Cleaning",
-  phone: "(512) 897-6963",
-  secondaryLine: "Or call (512) 897-6963 to talk directly with Jimmy or Ryan.",
+  phone: "(737) 727-4423",
+  secondaryLine: "Or call (737) 727-4423 to talk directly with Jimmy or Ryan.",
   trustBullets: [
     "MFS-certified hood cleaning specialists",
     "NFPA-96 compliant from hood to rooftop fan",
@@ -80,7 +80,7 @@ export const badges = [
   {
     label: "Exterior Cleaning Pros",
     description:
-      "Beyond the kitchen, we handle house washing, roof cleaning, construction clean-ups, window cleaning, and holiday & permanent lighting for homes and businesses.",
+      "Beyond the kitchen, we handle house washing, roof cleaning, and window cleaning for homes and businesses.",
   },
 ];
 
@@ -119,7 +119,7 @@ export const services: Service[] = [
 ];
 
 export const secondaryServicesLine =
-  "House washing • Roof cleaning • Construction clean-up • Window cleaning • Holiday & permanent lighting installs. One trusted team for your whole property.";
+  "House washing • Roof cleaning • Window cleaning. One trusted team for your hood and exterior cleaning.";
 
 export const galleryImages = [
   "/assets/gallery/gallery-1.webp",
@@ -244,7 +244,7 @@ export const contactContent = {
     "Serving Austin, Round Rock, Hutto, Cedar Park, Buda, Bastrop & nearby areas",
   ],
   phones: [
-    { label: "Call / Text Jimmy", value: "(512) 897-6963" },
+    { label: "Call / Text Jimmy", value: "(737) 727-4423" },
     { label: "Call / Text Ryan", value: "(512) 644-7613" },
   ],
   email: "vividcleaning512@gmail.com",
@@ -266,8 +266,7 @@ export const footerContent = {
     "NFPA-96 compliant system cleaning",
     "House & roof washing",
     "Window cleaning",
-    "Construction clean-up",
-    "Holiday & permanent lighting installs",
+    "Roof cleaning",
   ],
   serviceArea:
     "Proudly serving Austin, Round Rock, Hutto, Cedar Park, Buda, Bastrop and the surrounding Central Texas area.",
